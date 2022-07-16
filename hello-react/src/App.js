@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 
 function App() {
+  const something = "표현식";
   return (
     <>
-      <h1>프래그먼트 활용</h1>
-      <h2>프래그먼트 &lt;&gt;와 &lt;/&gt;표현!</h2>
+      <h1>{something}도 사용할 수 있는 jsx</h1>
     </>
   );
 }
