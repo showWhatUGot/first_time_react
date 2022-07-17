@@ -1,10 +1,11 @@
 import { Fragment } from "react";
 
 function App() {
-  const something = "표현식";
+  const truthIs = "true";
   return (
     <>
-      <h1>{something}도 사용할 수 있는 jsx</h1>
+      <h1>jsx내부에서는 if문 사용 못함 -&gt; 조건문 사용해야함.</h1>
+      {truthIs === "true" ? <h2>true</h2> : <h2>false</h2>}
     </>
   );
 }
