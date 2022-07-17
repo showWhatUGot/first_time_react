@@ -7,6 +7,8 @@ function App() {
     <>
       <div className="react">{name}</div>
       <input></input>
+      <br></br>
+      <input />
     </>
   );
 }
