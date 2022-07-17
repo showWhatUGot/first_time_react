@@ -5,9 +5,11 @@ function App() {
 
   return (
     <>
+      {/* JSX내부에서 주석달기 */}
       <div className="react">{name}</div>
-      <input></input>
-      <br></br>
+      <input // 태그 안에서는 이렇게
+      ></input>
+      <br /*태그 안에서는 이렇게 2*/></br>
       <input />
     </>
   );
