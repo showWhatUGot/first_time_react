@@ -1,7 +1,7 @@
-import Say from "./Say";
+import EventPratcie from "./EventPratcie";
 
 const App = () => {
-  return <Say />;
+  return <EventPratcie />;
 };
 
 export default App;
