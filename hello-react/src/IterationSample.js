@@ -26,7 +26,16 @@ const IterationSample = () => {
     }
   };
 
-  const namesList = names.map((names) => <li key={names.id}>{names.text}</li>);
+  const onRemove = (id) => {
+    const nextNames = names.filter((name) => name.id !== id);
+    setNames(nextNames);
+  };
+
+  const namesList = names.map((names) => (
+    <li key={names.id} onDoubleClick={() => onRemove(names.id)}>
+      {names.text}
+    </li>
+  ));
 
   return (
     <>
@@ -36,7 +45,7 @@ const IterationSample = () => {
         onKeyPress={onKeyPress}
       ></input>
       <button onClick={onClick}>추가</button>
-      <ul>{namesList}</ul>;
+      <ul>{namesList}</ul>
     </>
   );
 };
